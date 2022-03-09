@@ -1,0 +1,60 @@
+.editor-page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 15px 20px 15px;
+  gap: 55px;
+  @media (max-width: 820px) {
+    gap: 15px;
+  }
+  .editor-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+
+    .editor-name {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+      padding-top: 40px;
+      margin: 0.3em;
+      font-weight: 500;
+      color: var(--color-text-2);
+      @media (max-width: 600px) {
+        font-size: 9vw;
+      }
+    }
+    .editor-information {
+      display: flex;
+      max-width: 800px;
+      width: 100%;
+      gap: 10px;
+      text-align: left;
+      flex-direction: column;
+      color: var(--color-text-5);
+      .large {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--color-text-3);
+      }
+      padding: 20px;
+      background: var(--color-background-2);
+      border-radius: 8px;
+      @media (max-width: 500px) {
+        padding: 15px;
+        font-size: 14px;
+      }
+      @media (max-width: 400px) {
+        .large {
+          font-size: 17px;
+        }
+        font-size: 12px;
+      }
+    }
+  }
+}

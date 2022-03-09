@@ -1,0 +1,19 @@
+.articles-page {
+  padding: 0px 0;
+  @media (max-width: 850px) {
+    padding: 0;
+  }
+  .articles-page-container {
+    .articles-preview {
+      padding: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0px;
+      @media (max-width: 700px) {
+        padding: 0px 15px;
+        gap: 0px;
+      }
+    }
+  }
+}

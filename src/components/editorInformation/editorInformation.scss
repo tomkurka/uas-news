@@ -1,0 +1,20 @@
+.editor-information {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: var(--color-text-4);
+  gap: 10px;
+  .author {
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  @media (max-width: 700px) {
+    padding-top: 2px;
+  }
+  @media (max-width: 400px) {
+    .divider,
+    .date {
+      display: none;
+    }
+  }
+}

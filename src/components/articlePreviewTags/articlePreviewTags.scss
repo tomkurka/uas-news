@@ -1,0 +1,18 @@
+.article-preview-tags {
+  display: flex;
+  align-self: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 8px;
+  padding-top: 3px;
+  .tag {
+    background: var(--color-background-1);
+    border-radius: 6px;
+    padding: 5px 15px;
+    font-size: 0.8em;
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.top-navbar-container-mobile {
+  @media (min-width: 851px) {
+    display: none;
+  }
+  overflow: hidden;
+  z-index: 10000;
+  box-shadow: var(--box-shadow-medium);
+  background: var(--color-background-1);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 25px;
+
+  .side-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    .app-name {
+      font-weight: 400;
+      font-size: 24px;
+      .app-name-bold {
+        font-weight: 600;
+      }
+    }
+    .app-icon {
+      width: 40px;
+      height: 40px;
+      fill: var(--color-icon-1);
+    }
+  }
+  .top-navbar-mobile-theme-toggle {
+    width: 28px;
+    height: 28px;
+    .theme-icon {
+      width: 28px;
+      height: 28px;
+      fill: var(--color-icon-1);
+      cursor: pointer;
+    }
+  }
+}

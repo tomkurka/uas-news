@@ -1,0 +1,113 @@
+.article-small-preview {
+  @media (max-width: 500px) {
+    padding: 15px 0;
+    border-bottom: 2px solid var(--color-background-3);
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .article-small-preview-container {
+    background: var(--color-background-2);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    padding: 12px;
+    @media (max-width: 650px) {
+      font-size: 13px;
+    }
+    @media (max-width: 500px) {
+      font-size: 13px;
+    }
+    @media (max-width: 425px) {
+      font-size: 12px;
+    }
+    @media (max-width: 380px) {
+      font-size: 10px;
+    }
+    @media (max-width: 350px) {
+      font-size: 10px;
+    }
+    transition: transform 0.3s;
+    @media (min-width: 750px) {
+      &:hover {
+        background: var(--color-background-3);
+        transform: scale(1.02);
+      }
+    }
+    .article-img {
+      width: 100%;
+      height: 160px;
+      border-radius: 6px;
+      object-fit: cover;
+      overflow: hidden;
+      box-shadow: var(--box-shadow-medium);
+    }
+    .text-container {
+      display: flex;
+      align-items: left;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+
+      .article-title {
+        font-size: 1.1em;
+        font-weight: 500;
+        color: var(--color-text-3);
+        cursor: pointer;
+      }
+      .information-container {
+        font-size: 0.8em;
+        display: flex;
+        gap: 0.5em;
+        color: var(--color-text-5);
+        .author {
+          cursor: pointer;
+        }
+      }
+    }
+    @media (max-width: 500px) {
+      flex-direction: row-reverse;
+      background: var(--color-background-2);
+      border-radius: 6px;
+      padding: 5px;
+      align-items: center;
+      .article-img {
+        border-radius: 6px;
+        object-fit: cover;
+        overflow: hidden;
+        height: 100px;
+        width: 150px;
+        @media (max-width: 400px) {
+          height: 75px;
+          width: 105px;
+        }
+      }
+      .text-container {
+        padding: 10px;
+        width: calc(100% - 150px);
+        @media (max-width: 400px) {
+          width: calc(100% - 105px);
+        }
+        .article-title {
+          font-size: 1.1em;
+          font-weight: 500;
+          color: var(--color-text-2);
+          cursor: pointer;
+        }
+        .information-container {
+          font-size: 0.8em;
+          gap: 0.5em;
+          color: var(--color-text-5);
+          .author {
+            cursor: pointer;
+          }
+          @media (max-width: 350px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

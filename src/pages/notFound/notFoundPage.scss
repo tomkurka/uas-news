@@ -1,0 +1,40 @@
+.not-found-page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  .not-found-page-container {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 850px) {
+      min-height: calc(100vh - 280px);
+      justify-content: space-between;
+    }
+    .title {
+      font-size: 10vw;
+      margin: 0;
+      @media (max-width: 850px) {
+        font-size: 15vw;
+      }
+    }
+
+    .link {
+      font-size: 28px;
+      background: var(--color-background-3);
+      padding: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s;
+      text-align: center;
+      width: 100%;
+      &:hover {
+        transform: scale(1.04);
+      }
+      @media (max-width: 850px) {
+        font-size: 5vw;
+        padding: 1em;
+      }
+    }
+  }
+}
